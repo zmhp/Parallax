@@ -1,0 +1,112 @@
+body , html {
+    height : 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color : #666;
+}
+
+.parallax-img-1, .parallax-img-2, .parallax-img-3, .parallax-img-4, .parallax-img-5{
+    position: relative;
+    opacity : 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect comes here */
+}
+
+/* 
+    fixed = parallax
+    scroll = normaal
+*/
+
+.parallax-img-1{
+    background-image: url('../img/image_1.jpg');
+    min-height: 100%;
+}
+.parallax-img-2{
+    background-image: url('../img/image_2.jpg');
+    min-height: 500px;
+}
+.parallax-img-3{
+    background-image: url('../img/image_3.jpg');
+    min-height: 500px;
+}
+.parallax-img-4{
+    background-image: url('../img/image_4.jpg');
+    min-height: 500px;
+}
+.parallax-img-5{
+    background-image: url('../img/image_5.jpg');
+    min-height: 500px;
+}
+
+.parallax-text{
+    position : absolute;
+    top : 50%;
+    width: 100%;
+    text-align: center;
+    color : #DDD;
+    font-size : 27px;
+    letter-spacing : 8px ;
+    text-transform : uppercase;
+    line-height: 5rem;
+}
+
+.parallax-text .small-text{
+    font-size: 14px;
+}
+
+.parallax-text .border{
+    background-color: #111;
+    color : #fff;
+    padding : 20px;
+}
+
+.parallax-text .border.transparent{
+    background-color: transparent;
+}
+
+.section{
+    text-align: center;
+    padding : 50px 80px;
+}
+
+.section-light{
+    background-color: #F4F4F4;
+    color : #666;
+}
+
+.section-light{
+    background-color: #282E34;
+    color : #DDD;
+}
+
+footer{
+    background-color: #303030;
+    color : #858585;
+    text-align :center;
+    font-size: 0.75rem;
+    height : 70px;
+    padding : 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {  
+    
+    text-decoration: none;
+    color : white;
+}
+
+@media(max-width:568px){
+    .parallax-img-1 ,
+    .parallax-img-2 ,
+    .parallax-img-3 ,
+    .parallax-img-4 ,
+    .parallax-img-5 {
+        background-attachment: scroll;
+    }
+}
